@@ -1,0 +1,81 @@
+# F1 result Markdown generator
+
+This folder contains a small automation that reads a Formula 1 `.ics` calendar,
+waits until each session has ended, fetches the official Formula 1 results page,
+and writes Markdown tables that can be pasted directly into the blog.
+Driver cells keep both Chinese and English names, for example
+`刘易斯·汉密尔顿 Lewis Hamilton`.
+
+The generator does not publish to the blog database. It only writes Markdown
+files under `generated/` and records processed sessions under `state/`.
+
+## Layout
+
+```text
+F1_get_result/
+  f1_get_result.py          Main generator
+  config/translations.json  Chinese driver/team/session names
+  config/race_aliases.json  Calendar location/title to F1 result slug hints
+  data/                     Optional checked-in ICS file location
+  generated/                Generated Markdown files
+  state/                    De-duplication state
+```
+
+## Local usage
+
+List sessions parsed from your ICS file:
+
+```bash
+python3 F1_get_result/f1_get_result.py \
+  --ics-file /Users/shiyusen/Downloads/Formula_1.ics \
+  --list-events
+```
+
+Generate results for sessions that ended recently:
+
+```bash
+python3 F1_get_result/f1_get_result.py \
+  --ics-file /Users/shiyusen/Downloads/Formula_1.ics \
+  --lookback-hours 96 \
+  --delay-minutes 20
+```
+
+Force a specific session, useful for backfilling:
+
+```bash
+python3 F1_get_result/f1_get_result.py \
+  --ics-file /Users/shiyusen/Downloads/Formula_1.ics \
+  --year 2026 \
+  --race-slug great-britain \
+  --session qualifying \
+  --force
+```
+
+## GitHub Actions setup
+
+The workflow is installed at:
+
+```text
+.github/workflows/f1-results.yml
+```
+
+It runs every 30 minutes and commits new files under:
+
+```text
+F1_get_result/generated/
+F1_get_result/state/
+```
+
+For a private calendar URL, add a GitHub repository secret named:
+
+```text
+F1_ICS_URL
+```
+
+If you do not want to use a secret, commit the calendar file as:
+
+```text
+F1_get_result/data/Formula_1.ics
+```
+
+Do not commit a private subscription URL into the repository.

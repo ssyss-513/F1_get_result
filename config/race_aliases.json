@@ -1,0 +1,38 @@
+{
+  "location_slug_hints": {
+    "Australia": ["australia", "australian"],
+    "Austria": ["austria", "austrian"],
+    "Azerbaijan": ["azerbaijan"],
+    "Bahrain": ["bahrain"],
+    "Belgium": ["belgium", "belgian"],
+    "Brazil": ["brazil", "sao-paulo", "são-paulo", "sao paulo", "são paulo"],
+    "Canada": ["canada", "canadian"],
+    "China": ["china", "chinese"],
+    "Hungary": ["hungary", "hungarian"],
+    "Italy": ["italy", "italian", "monza"],
+    "Japan": ["japan", "japanese"],
+    "Mexico": ["mexico", "mexican"],
+    "Monaco": ["monaco"],
+    "Netherlands": ["netherlands", "dutch"],
+    "Qatar": ["qatar"],
+    "Saudi Arabia": ["saudi-arabia", "saudi"],
+    "Singapore": ["singapore"],
+    "Spain": ["spain", "spanish"],
+    "United Arab Emirates": ["abu-dhabi", "abu dhabi", "united-arab-emirates"],
+    "United Kingdom": ["great-britain", "british", "united-kingdom"],
+    "United States": ["united-states", "las-vegas", "miami"]
+  },
+  "title_slug_hints": {
+    "BRITISH": "great-britain",
+    "DUTCH": "netherlands",
+    "UNITED STATES": "united-states",
+    "LAS VEGAS": "las-vegas",
+    "ABU DHABI": "abu-dhabi",
+    "SAO PAULO": "sao-paulo",
+    "SÃO PAULO": "sao-paulo",
+    "ITALIA": "italy",
+    "SPAIN": "spain",
+    "ESPAÑA": "spain"
+  }
+}
+

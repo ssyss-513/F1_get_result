@@ -1,0 +1,76 @@
+{
+  "sessions": {
+    "practice-1": "第一节练习（FP1）",
+    "practice-2": "第二节练习（FP2）",
+    "practice-3": "第三节练习（FP3）",
+    "sprint-qualifying": "冲刺排位赛",
+    "sprint": "冲刺赛",
+    "qualifying": "排位赛",
+    "race": "正赛"
+  },
+  "drivers": {
+    "Alexander Albon": "亚历山大·阿尔本",
+    "Alex Albon": "亚历山大·阿尔本",
+    "Andrea Kimi Antonelli": "基米·安东内利",
+    "Arvid Lindblad": "阿维德·林德布拉德",
+    "Carlos Sainz": "卡洛斯·塞恩斯",
+    "Charles Leclerc": "夏尔·勒克莱尔",
+    "Esteban Ocon": "埃斯特班·奥康",
+    "Fernando Alonso": "费尔南多·阿隆索",
+    "Franco Colapinto": "弗兰科·科拉平托",
+    "Gabriel Bortoleto": "加布里埃尔·博托莱托",
+    "George Russell": "乔治·拉塞尔",
+    "Isack Hadjar": "伊萨克·哈贾尔",
+    "Kimi Antonelli": "基米·安东内利",
+    "Lance Stroll": "兰斯·斯特罗尔",
+    "Lando Norris": "兰多·诺里斯",
+    "Lewis Hamilton": "刘易斯·汉密尔顿",
+    "Liam Lawson": "利亚姆·劳森",
+    "Max Verstappen": "马克斯·维斯塔潘",
+    "Nico Hulkenberg": "尼科·霍肯伯格",
+    "Nico Hülkenberg": "尼科·霍肯伯格",
+    "Oliver Bearman": "奥利弗·贝尔曼",
+    "Oscar Piastri": "奥斯卡·皮亚斯特里",
+    "Pierre Gasly": "皮埃尔·加斯利",
+    "Sergio Perez": "塞尔吉奥·佩雷兹",
+    "Sergio Pérez": "塞尔吉奥·佩雷兹",
+    "Valtteri Bottas": "瓦尔特里·博塔斯"
+  },
+  "teams": {
+    "Alpine": "阿尔派",
+    "Aston Martin": "阿斯顿·马丁",
+    "Audi": "奥迪",
+    "Cadillac": "凯迪拉克",
+    "Ferrari": "法拉利",
+    "Haas": "哈斯",
+    "Haas F1 Team": "哈斯",
+    "McLaren": "迈凯伦",
+    "Mercedes": "梅赛德斯",
+    "Racing Bulls": "Racing Bulls",
+    "Red Bull Racing": "红牛车队",
+    "Williams": "威廉姆斯"
+  },
+  "races_zh": {
+    "australia": "澳大利亚大奖赛",
+    "austria": "奥地利大奖赛",
+    "azerbaijan": "阿塞拜疆大奖赛",
+    "bahrain": "巴林大奖赛",
+    "belgium": "比利时大奖赛",
+    "brazil": "圣保罗大奖赛",
+    "great-britain": "英国大奖赛",
+    "hungary": "匈牙利大奖赛",
+    "italy": "意大利大奖赛",
+    "las-vegas": "拉斯维加斯大奖赛",
+    "mexico": "墨西哥城大奖赛",
+    "netherlands": "荷兰大奖赛",
+    "qatar": "卡塔尔大奖赛",
+    "singapore": "新加坡大奖赛",
+    "spain": "西班牙大奖赛",
+    "united-states": "美国大奖赛",
+    "abu-dhabi": "阿布扎比大奖赛"
+  },
+  "circuits_zh": {
+    "great-britain": "银石赛道"
+  }
+}
+
