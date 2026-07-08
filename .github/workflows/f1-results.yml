@@ -1,0 +1,50 @@
+name: F1 result Markdown
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate F1 result Markdown
+        env:
+          F1_ICS_URL: ${{ secrets.F1_ICS_URL }}
+        run: |
+          set -euo pipefail
+          args=()
+          if [ -n "${F1_ICS_URL:-}" ]; then
+            args+=(--ics-url "$F1_ICS_URL")
+          elif [ -f "data/Formula_1.ics" ]; then
+            args+=(--ics-file "data/Formula_1.ics")
+          else
+            echo "No ICS source found. Set the F1_ICS_URL secret or commit data/Formula_1.ics."
+            exit 1
+          fi
+          python3 f1_get_result.py "${args[@]}" --lookback-hours 120 --delay-minutes 20
+
+      - name: Commit generated Markdown
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated state
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "Update F1 result Markdown"
+          git push
