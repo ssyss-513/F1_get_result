@@ -1,0 +1,39 @@
+{
+  "results": {
+    "2026:1289:great-britain:practice-1": {
+      "event_summary": "🏎 FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026 - Practice 1",
+      "output": "/home/runner/work/F1_get_result/F1_get_result/generated/2026/great-britain-practice-1.md",
+      "sha256": "28c4584663049bc5379aaa693a9708ee0a02de1a400a50f7da38ed799250f2f0",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/practice/1",
+      "updated_at": "2026-07-08T06:46:12.509394+00:00"
+    },
+    "2026:1289:great-britain:qualifying": {
+      "event_summary": "⏱️ FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026 - Qualifying",
+      "output": "/home/runner/work/F1_get_result/F1_get_result/generated/2026/great-britain-qualifying.md",
+      "sha256": "e52b21b682c6dce01c130f4705c38cdbb08cf0c9ab035b9af0343604af60fec6",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/qualifying",
+      "updated_at": "2026-07-08T06:46:12.509394+00:00"
+    },
+    "2026:1289:great-britain:race": {
+      "event_summary": "🏁 FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026 - Race",
+      "output": "/home/runner/work/F1_get_result/F1_get_result/generated/2026/great-britain-race.md",
+      "sha256": "3a218ffe74250685c2ec7dade269402ced499ea6228a5b7048e165fe6a63fb15",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/race-result",
+      "updated_at": "2026-07-08T06:46:12.509394+00:00"
+    },
+    "2026:1289:great-britain:sprint": {
+      "event_summary": "🏁 FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026 - Sprint Race",
+      "output": "/home/runner/work/F1_get_result/F1_get_result/generated/2026/great-britain-sprint.md",
+      "sha256": "26ff428eebe828273c28cbd534552de8f895c81de4dd6c43bca5325f5faeb24c",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/sprint-results",
+      "updated_at": "2026-07-08T06:46:12.509394+00:00"
+    },
+    "2026:1289:great-britain:sprint-qualifying": {
+      "event_summary": "⏱️ FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026 - Sprint Qualification",
+      "output": "/home/runner/work/F1_get_result/F1_get_result/generated/2026/great-britain-sprint-qualifying.md",
+      "sha256": "a5d0af4dc901cafa52654c791c342ba97ce08d5fc6ab1706ce5717650b2329e2",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/sprint-qualifying",
+      "updated_at": "2026-07-08T06:46:12.509394+00:00"
+    }
+  }
+}
