@@ -1,0 +1,60 @@
+name: Sync F1 calendar schedule
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-calendar-schedule
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Build schedules from calendar
+        env:
+          F1_ICS_URL: ${{ secrets.F1_ICS_URL }}
+        run: |
+          set -euo pipefail
+          args=()
+          if [ -n "${F1_ICS_URL:-}" ]; then
+            args+=(--ics-url "$F1_ICS_URL")
+          elif [ -f "data/Formula_1.ics" ]; then
+            args+=(--ics-file "data/Formula_1.ics")
+          else
+            echo "No ICS source found. Set the F1_ICS_URL secret or commit data/Formula_1.ics."
+            exit 1
+          fi
+          python3 sync_workflow_schedule.py "${args[@]}" --year "$(date -u +%Y)"
+
+      - name: Commit schedule changes
+        run: |
+          set -euo pipefail
+          git add .github/workflows/f1-results.yml
+          if git diff --cached --quiet; then
+            echo "Calendar schedule is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync F1 calendar schedule"
+          git pull --rebase
+          git push

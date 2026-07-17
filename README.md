@@ -15,6 +15,7 @@ files under `generated/<year>/<race>/` and records processed sessions under
 ```text
 F1_get_result/
   f1_get_result.py          Main generator
+  sync_workflow_schedule.py Convert ICS session times into exact Actions schedules
   config/translations.json  Chinese driver/team/session names
   config/race_aliases.json  Calendar location/title to F1 result slug hints
   data/                     Optional checked-in ICS file location
@@ -60,7 +61,9 @@ The workflow is installed at:
 .github/workflows/f1-results.yml
 ```
 
-It runs every 30 minutes and commits new files under:
+The result workflow is generated from the ICS calendar. For every session it
+runs 17 minutes after the calendar end time, retries 30 minutes later, and has
+one daily recovery run. It commits new files under:
 
 ```text
 generated/
@@ -80,6 +83,16 @@ data/Formula_1.ics
 ```
 
 Do not commit a private subscription URL into the repository.
+
+The **Sync F1 calendar schedule** workflow runs daily. It reads the same ICS
+source and updates the exact UTC triggers in `f1-results.yml` when the calendar
+changes. To regenerate them locally:
+
+```bash
+python3 sync_workflow_schedule.py \
+  --ics-file /Users/shiyusen/Downloads/Formula_1.ics \
+  --year 2026
+```
 
 For a manual backfill in GitHub Actions, run **F1 result Markdown** with:
 

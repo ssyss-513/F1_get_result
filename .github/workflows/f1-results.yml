@@ -2,7 +2,159 @@ name: F1 result Markdown
 
 on:
   schedule:
-    - cron: "23,53 * * * *"
+    # BEGIN GENERATED F1 SESSION SCHEDULE
+    - cron: "17 4 * * *" # daily recovery
+    - cron: "47 12 26 6 *" # 2026-06-26 practice-1 +17m
+    - cron: "17 13 26 6 *" # 2026-06-26 practice-1 +47m
+    - cron: "17 16 26 6 *" # 2026-06-26 practice-2 +17m
+    - cron: "47 16 26 6 *" # 2026-06-26 practice-2 +47m
+    - cron: "47 11 27 6 *" # 2026-06-27 practice-3 +17m
+    - cron: "17 12 27 6 *" # 2026-06-27 practice-3 +47m
+    - cron: "17 15 27 6 *" # 2026-06-27 qualifying +17m
+    - cron: "47 15 27 6 *" # 2026-06-27 qualifying +47m
+    - cron: "17 15 28 6 *" # 2026-06-28 race +17m
+    - cron: "47 15 28 6 *" # 2026-06-28 race +47m
+    - cron: "47 12 3 7 *" # 2026-07-03 practice-1 +17m
+    - cron: "17 13 3 7 *" # 2026-07-03 practice-1 +47m
+    - cron: "31 16 3 7 *" # 2026-07-03 sprint-qualifying +17m
+    - cron: "1 17 3 7 *" # 2026-07-03 sprint-qualifying +47m
+    - cron: "17 12 4 7 *" # 2026-07-04 sprint +17m
+    - cron: "47 12 4 7 *" # 2026-07-04 sprint +47m
+    - cron: "17 16 4 7 *" # 2026-07-04 qualifying +17m
+    - cron: "47 16 4 7 *" # 2026-07-04 qualifying +47m
+    - cron: "17 16 5 7 *" # 2026-07-05 race +17m
+    - cron: "47 16 5 7 *" # 2026-07-05 race +47m
+    - cron: "47 12 17 7 *" # 2026-07-17 practice-1 +17m
+    - cron: "17 13 17 7 *" # 2026-07-17 practice-1 +47m
+    - cron: "17 16 17 7 *" # 2026-07-17 practice-2 +17m
+    - cron: "47 16 17 7 *" # 2026-07-17 practice-2 +47m
+    - cron: "47 11 18 7 *" # 2026-07-18 practice-3 +17m
+    - cron: "17 12 18 7 *" # 2026-07-18 practice-3 +47m
+    - cron: "17 15 18 7 *" # 2026-07-18 qualifying +17m
+    - cron: "47 15 18 7 *" # 2026-07-18 qualifying +47m
+    - cron: "17 15 19 7 *" # 2026-07-19 race +17m
+    - cron: "47 15 19 7 *" # 2026-07-19 race +47m
+    - cron: "47 12 24 7 *" # 2026-07-24 practice-1 +17m
+    - cron: "17 13 24 7 *" # 2026-07-24 practice-1 +47m
+    - cron: "17 16 24 7 *" # 2026-07-24 practice-2 +17m
+    - cron: "47 16 24 7 *" # 2026-07-24 practice-2 +47m
+    - cron: "47 11 25 7 *" # 2026-07-25 practice-3 +17m
+    - cron: "17 12 25 7 *" # 2026-07-25 practice-3 +47m
+    - cron: "17 15 25 7 *" # 2026-07-25 qualifying +17m
+    - cron: "47 15 25 7 *" # 2026-07-25 qualifying +47m
+    - cron: "17 15 26 7 *" # 2026-07-26 race +17m
+    - cron: "47 15 26 7 *" # 2026-07-26 race +47m
+    - cron: "47 11 21 8 *" # 2026-08-21 practice-1 +17m
+    - cron: "17 12 21 8 *" # 2026-08-21 practice-1 +47m
+    - cron: "31 15 21 8 *" # 2026-08-21 sprint-qualifying +17m
+    - cron: "1 16 21 8 *" # 2026-08-21 sprint-qualifying +47m
+    - cron: "17 11 22 8 *" # 2026-08-22 sprint +17m
+    - cron: "47 11 22 8 *" # 2026-08-22 sprint +47m
+    - cron: "17 15 22 8 *" # 2026-08-22 qualifying +17m
+    - cron: "47 15 22 8 *" # 2026-08-22 qualifying +47m
+    - cron: "17 15 23 8 *" # 2026-08-23 race +17m
+    - cron: "47 15 23 8 *" # 2026-08-23 race +47m
+    - cron: "47 11 4 9 *" # 2026-09-04 practice-1 +17m
+    - cron: "17 12 4 9 *" # 2026-09-04 practice-1 +47m
+    - cron: "17 15 4 9 *" # 2026-09-04 practice-2 +17m
+    - cron: "47 15 4 9 *" # 2026-09-04 practice-2 +47m
+    - cron: "47 11 5 9 *" # 2026-09-05 practice-3 +17m
+    - cron: "17 12 5 9 *" # 2026-09-05 practice-3 +47m
+    - cron: "17 15 5 9 *" # 2026-09-05 qualifying +17m
+    - cron: "47 15 5 9 *" # 2026-09-05 qualifying +47m
+    - cron: "17 15 6 9 *" # 2026-09-06 race +17m
+    - cron: "47 15 6 9 *" # 2026-09-06 race +47m
+    - cron: "47 12 11 9 *" # 2026-09-11 practice-1 +17m
+    - cron: "17 13 11 9 *" # 2026-09-11 practice-1 +47m
+    - cron: "17 16 11 9 *" # 2026-09-11 practice-2 +17m
+    - cron: "47 16 11 9 *" # 2026-09-11 practice-2 +47m
+    - cron: "47 11 12 9 *" # 2026-09-12 practice-3 +17m
+    - cron: "17 12 12 9 *" # 2026-09-12 practice-3 +47m
+    - cron: "17 15 12 9 *" # 2026-09-12 qualifying +17m
+    - cron: "47 15 12 9 *" # 2026-09-12 qualifying +47m
+    - cron: "17 15 13 9 *" # 2026-09-13 race +17m
+    - cron: "47 15 13 9 *" # 2026-09-13 race +47m
+    - cron: "47 9 24 9 *" # 2026-09-24 practice-1 +17m
+    - cron: "17 10 24 9 *" # 2026-09-24 practice-1 +47m
+    - cron: "17 13 24 9 *" # 2026-09-24 practice-2 +17m
+    - cron: "47 13 24 9 *" # 2026-09-24 practice-2 +47m
+    - cron: "47 9 25 9 *" # 2026-09-25 practice-3 +17m
+    - cron: "17 10 25 9 *" # 2026-09-25 practice-3 +47m
+    - cron: "17 13 25 9 *" # 2026-09-25 qualifying +17m
+    - cron: "47 13 25 9 *" # 2026-09-25 qualifying +47m
+    - cron: "17 13 26 9 *" # 2026-09-26 race +17m
+    - cron: "47 13 26 9 *" # 2026-09-26 race +47m
+    - cron: "47 9 9 10 *" # 2026-10-09 practice-1 +17m
+    - cron: "17 10 9 10 *" # 2026-10-09 practice-1 +47m
+    - cron: "31 13 9 10 *" # 2026-10-09 sprint-qualifying +17m
+    - cron: "1 14 9 10 *" # 2026-10-09 sprint-qualifying +47m
+    - cron: "17 10 10 10 *" # 2026-10-10 sprint +17m
+    - cron: "47 10 10 10 *" # 2026-10-10 sprint +47m
+    - cron: "17 14 10 10 *" # 2026-10-10 qualifying +17m
+    - cron: "47 14 10 10 *" # 2026-10-10 qualifying +47m
+    - cron: "17 14 11 10 *" # 2026-10-11 race +17m
+    - cron: "47 14 11 10 *" # 2026-10-11 race +47m
+    - cron: "47 18 23 10 *" # 2026-10-23 practice-1 +17m
+    - cron: "17 19 23 10 *" # 2026-10-23 practice-1 +47m
+    - cron: "17 22 23 10 *" # 2026-10-23 practice-2 +17m
+    - cron: "47 22 23 10 *" # 2026-10-23 practice-2 +47m
+    - cron: "47 18 24 10 *" # 2026-10-24 practice-3 +17m
+    - cron: "17 19 24 10 *" # 2026-10-24 practice-3 +47m
+    - cron: "17 22 24 10 *" # 2026-10-24 qualifying +17m
+    - cron: "47 22 24 10 *" # 2026-10-24 qualifying +47m
+    - cron: "17 22 25 10 *" # 2026-10-25 race +17m
+    - cron: "47 22 25 10 *" # 2026-10-25 race +47m
+    - cron: "47 19 30 10 *" # 2026-10-30 practice-1 +17m
+    - cron: "17 20 30 10 *" # 2026-10-30 practice-1 +47m
+    - cron: "17 23 30 10 *" # 2026-10-30 practice-2 +17m
+    - cron: "47 23 30 10 *" # 2026-10-30 practice-2 +47m
+    - cron: "47 18 31 10 *" # 2026-10-31 practice-3 +17m
+    - cron: "17 19 31 10 *" # 2026-10-31 practice-3 +47m
+    - cron: "17 22 31 10 *" # 2026-10-31 qualifying +17m
+    - cron: "47 22 31 10 *" # 2026-10-31 qualifying +47m
+    - cron: "17 22 1 11 *" # 2026-11-01 race +17m
+    - cron: "47 22 1 11 *" # 2026-11-01 race +47m
+    - cron: "47 16 6 11 *" # 2026-11-06 practice-1 +17m
+    - cron: "17 17 6 11 *" # 2026-11-06 practice-1 +47m
+    - cron: "17 20 6 11 *" # 2026-11-06 practice-2 +17m
+    - cron: "47 20 6 11 *" # 2026-11-06 practice-2 +47m
+    - cron: "47 15 7 11 *" # 2026-11-07 practice-3 +17m
+    - cron: "17 16 7 11 *" # 2026-11-07 practice-3 +47m
+    - cron: "17 19 7 11 *" # 2026-11-07 qualifying +17m
+    - cron: "47 19 7 11 *" # 2026-11-07 qualifying +47m
+    - cron: "17 19 8 11 *" # 2026-11-08 race +17m
+    - cron: "47 19 8 11 *" # 2026-11-08 race +47m
+    - cron: "47 1 20 11 *" # 2026-11-20 practice-1 +17m
+    - cron: "17 2 20 11 *" # 2026-11-20 practice-1 +47m
+    - cron: "17 5 20 11 *" # 2026-11-20 practice-2 +17m
+    - cron: "47 5 20 11 *" # 2026-11-20 practice-2 +47m
+    - cron: "47 1 21 11 *" # 2026-11-21 practice-3 +17m
+    - cron: "17 2 21 11 *" # 2026-11-21 practice-3 +47m
+    - cron: "17 5 21 11 *" # 2026-11-21 qualifying +17m
+    - cron: "47 5 21 11 *" # 2026-11-21 qualifying +47m
+    - cron: "17 6 22 11 *" # 2026-11-22 race +17m
+    - cron: "47 6 22 11 *" # 2026-11-22 race +47m
+    - cron: "47 14 27 11 *" # 2026-11-27 practice-1 +17m
+    - cron: "17 15 27 11 *" # 2026-11-27 practice-1 +47m
+    - cron: "17 18 27 11 *" # 2026-11-27 practice-2 +17m
+    - cron: "47 18 27 11 *" # 2026-11-27 practice-2 +47m
+    - cron: "47 15 28 11 *" # 2026-11-28 practice-3 +17m
+    - cron: "17 16 28 11 *" # 2026-11-28 practice-3 +47m
+    - cron: "17 19 28 11 *" # 2026-11-28 qualifying +17m
+    - cron: "47 19 28 11 *" # 2026-11-28 qualifying +47m
+    - cron: "17 18 29 11 *" # 2026-11-29 race +17m
+    - cron: "47 18 29 11 *" # 2026-11-29 race +47m
+    - cron: "47 10 4 12 *" # 2026-12-04 practice-1 +17m
+    - cron: "17 11 4 12 *" # 2026-12-04 practice-1 +47m
+    - cron: "17 14 4 12 *" # 2026-12-04 practice-2 +17m
+    - cron: "47 14 4 12 *" # 2026-12-04 practice-2 +47m
+    - cron: "47 11 5 12 *" # 2026-12-05 practice-3 +17m
+    - cron: "17 12 5 12 *" # 2026-12-05 practice-3 +47m
+    - cron: "17 15 5 12 *" # 2026-12-05 qualifying +17m
+    - cron: "47 15 5 12 *" # 2026-12-05 qualifying +47m
+    - cron: "17 15 6 12 *" # 2026-12-06 race +17m
+    - cron: "47 15 6 12 *" # 2026-12-06 race +47m
+    # END GENERATED F1 SESSION SCHEDULE
   workflow_dispatch:
     inputs:
       year:
@@ -30,6 +182,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: f1-result-markdown
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -41,6 +197,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      - name: Run tests
+        run: python3 -m unittest discover -s tests -v
 
       - name: Generate F1 result Markdown
         env:
@@ -74,7 +233,7 @@ jobs:
               extra_args+=(--force)
             fi
           fi
-          python3 f1_get_result.py "${args[@]}" --lookback-hours 120 --delay-minutes 20 "${extra_args[@]}"
+          python3 f1_get_result.py "${args[@]}" --lookback-hours 120 --delay-minutes 15 "${extra_args[@]}"
 
       - name: Commit generated Markdown
         run: |
@@ -87,4 +246,5 @@ jobs:
             exit 0
           fi
           git commit -m "Update F1 result Markdown"
+          git pull --rebase
           git push
