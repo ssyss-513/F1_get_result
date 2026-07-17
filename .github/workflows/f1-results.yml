@@ -2,7 +2,7 @@ name: F1 result Markdown
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "23,53 * * * *"
   workflow_dispatch:
     inputs:
       year:
