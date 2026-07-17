@@ -34,6 +34,13 @@
       "sha256": "a5d0af4dc901cafa52654c791c342ba97ce08d5fc6ab1706ce5717650b2329e2",
       "source_url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/sprint-qualifying",
       "updated_at": "2026-07-08T06:46:12.509394+00:00"
+    },
+    "2026:1290:belgium:practice-1": {
+      "event_summary": "🏎 FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2026 - Practice 1",
+      "output": "generated/2026/Belgium/belgium-practice-1.md",
+      "sha256": "a3275e65f2dbcd55a6f64bfe33f210b6f4704fc6cf54b0f855ff7bcf001f0eb9",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1290/belgium/practice/1",
+      "updated_at": "2026-07-17T13:00:00+00:00"
     }
   }
 }

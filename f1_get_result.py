@@ -48,6 +48,11 @@ SESSION_FILE_NAMES = {
 }
 
 
+OUTPUT_FOLDER_NAMES = {
+    "great-britain": "Britain",
+}
+
+
 @dataclasses.dataclass(frozen=True)
 class CalendarEvent:
     uid: str
@@ -168,6 +173,12 @@ def read_json(path: Path, default: Any) -> Any:
 def write_json(path: Path, data: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def file_sha256(path: Path) -> Optional[str]:
+    if not path.is_file():
+        return None
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def fetch_url(url: str, timeout: int = 30) -> str:
@@ -612,8 +623,21 @@ def state_key(race: RaceInfo, session_key: str) -> str:
     return f"{race.year}:{race.race_id}:{race.slug}:{session_key}"
 
 
+def output_folder_name(race: RaceInfo) -> str:
+    if race.slug in OUTPUT_FOLDER_NAMES:
+        return OUTPUT_FOLDER_NAMES[race.slug]
+    return "-".join(part.capitalize() for part in race.slug.split("-") if part)
+
+
 def output_path(output_dir: Path, race: RaceInfo, session_key: str) -> Path:
-    return output_dir / str(race.year) / f"{race.slug}-{SESSION_FILE_NAMES[session_key]}.md"
+    return output_dir / str(race.year) / output_folder_name(race) / f"{race.slug}-{SESSION_FILE_NAMES[session_key]}.md"
+
+
+def state_output_path(out: Path) -> str:
+    try:
+        return str(out.relative_to(BASE_DIR))
+    except ValueError:
+        return str(out)
 
 
 def parse_now(value: Optional[str]) -> dt.datetime:
@@ -636,6 +660,7 @@ def list_events(events: list[CalendarEvent]) -> None:
 def run(args: argparse.Namespace) -> int:
     ics_content = fetch_ics(args.ics_file, args.ics_url)
     events = calendar_events_from_ics(ics_content)
+    parsed_count = len(events)
 
     if args.list_events:
         list_events(events)
@@ -674,6 +699,19 @@ def run(args: argparse.Namespace) -> int:
             if matched is not None and matched.slug == args.race_slug:
                 filtered_candidates.append(event)
         candidates = filtered_candidates
+
+    print(
+        "info: parsed "
+        f"{parsed_count} session(s); {len(candidates)} eligible after filters "
+        f"(now={now.isoformat()}, lookback_hours={args.lookback_hours}, "
+        f"delay_minutes={args.delay_minutes}, force={args.force})"
+    )
+    for candidate in candidates:
+        print(
+            "info: candidate: "
+            f"{candidate.end.isoformat()} | {candidate.location} | "
+            f"{candidate.session_key} | {candidate.race_title}"
+        )
 
     state_path = Path(args.state_file)
     state = load_state(state_path)
@@ -720,17 +758,18 @@ def run(args: argparse.Namespace) -> int:
             continue
 
         digest = hashlib.sha256(md.encode("utf-8")).hexdigest()
-        if state["results"].get(key, {}).get("sha256") == digest and not args.force:
+        out = output_path(Path(args.output_dir), race, event.session_key)
+        output_digest = file_sha256(out)
+        if state["results"].get(key, {}).get("sha256") == digest and output_digest == digest and not args.force:
             print(f"unchanged: {key}")
             continue
 
-        out = output_path(Path(args.output_dir), race, event.session_key)
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(md, encoding="utf-8")
         state["results"][key] = {
             "sha256": digest,
             "source_url": source_url,
-            "output": str(out),
+            "output": state_output_path(out),
             "updated_at": now.isoformat(),
             "event_summary": event.summary,
         }

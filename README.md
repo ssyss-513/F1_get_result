@@ -7,7 +7,8 @@ Driver cells keep both Chinese and English names, for example
 `刘易斯·汉密尔顿 Lewis Hamilton`.
 
 The generator does not publish to the blog database. It only writes Markdown
-files under `generated/` and records processed sessions under `state/`.
+files under `generated/<year>/<race>/` and records processed sessions under
+`state/`.
 
 ## Layout
 
@@ -26,7 +27,7 @@ F1_get_result/
 List sessions parsed from your ICS file:
 
 ```bash
-python3 F1_get_result/f1_get_result.py \
+python3 f1_get_result.py \
   --ics-file /Users/shiyusen/Downloads/Formula_1.ics \
   --list-events
 ```
@@ -34,7 +35,7 @@ python3 F1_get_result/f1_get_result.py \
 Generate results for sessions that ended recently:
 
 ```bash
-python3 F1_get_result/f1_get_result.py \
+python3 f1_get_result.py \
   --ics-file /Users/shiyusen/Downloads/Formula_1.ics \
   --lookback-hours 96 \
   --delay-minutes 20
@@ -43,7 +44,7 @@ python3 F1_get_result/f1_get_result.py \
 Force a specific session, useful for backfilling:
 
 ```bash
-python3 F1_get_result/f1_get_result.py \
+python3 f1_get_result.py \
   --ics-file /Users/shiyusen/Downloads/Formula_1.ics \
   --year 2026 \
   --race-slug great-britain \
@@ -62,8 +63,8 @@ The workflow is installed at:
 It runs every 30 minutes and commits new files under:
 
 ```text
-F1_get_result/generated/
-F1_get_result/state/
+generated/
+state/
 ```
 
 For a private calendar URL, add a GitHub repository secret named:
@@ -75,7 +76,16 @@ F1_ICS_URL
 If you do not want to use a secret, commit the calendar file as:
 
 ```text
-F1_get_result/data/Formula_1.ics
+data/Formula_1.ics
 ```
 
 Do not commit a private subscription URL into the repository.
+
+For a manual backfill in GitHub Actions, run **F1 result Markdown** with:
+
+```text
+year: 2026
+race_slug: belgium
+session: practice-1
+force: true
+```

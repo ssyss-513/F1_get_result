@@ -4,6 +4,28 @@ on:
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:
+    inputs:
+      year:
+        description: "Season year, e.g. 2026"
+        required: false
+        type: string
+      race_slug:
+        description: "Race slug, e.g. belgium"
+        required: false
+        type: string
+      race_id:
+        description: "Race id, e.g. 1290"
+        required: false
+        type: string
+      session:
+        description: "Session key, e.g. practice-1 / qualifying / race"
+        required: false
+        type: string
+      force:
+        description: "Backfill the selected event even if it is outside the normal time window"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -26,6 +48,7 @@ jobs:
         run: |
           set -euo pipefail
           args=()
+          extra_args=()
           if [ -n "${F1_ICS_URL:-}" ]; then
             args+=(--ics-url "$F1_ICS_URL")
           elif [ -f "data/Formula_1.ics" ]; then
@@ -34,7 +57,24 @@ jobs:
             echo "No ICS source found. Set the F1_ICS_URL secret or commit data/Formula_1.ics."
             exit 1
           fi
-          python3 f1_get_result.py "${args[@]}" --lookback-hours 120 --delay-minutes 20
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ -n "${{ inputs.year }}" ]; then
+              extra_args+=(--year "${{ inputs.year }}")
+            fi
+            if [ -n "${{ inputs.race_slug }}" ]; then
+              extra_args+=(--race-slug "${{ inputs.race_slug }}")
+            fi
+            if [ -n "${{ inputs.race_id }}" ]; then
+              extra_args+=(--race-id "${{ inputs.race_id }}")
+            fi
+            if [ -n "${{ inputs.session }}" ]; then
+              extra_args+=(--session "${{ inputs.session }}")
+            fi
+            if [ "${{ inputs.force }}" = "true" ]; then
+              extra_args+=(--force)
+            fi
+          fi
+          python3 f1_get_result.py "${args[@]}" --lookback-hours 120 --delay-minutes 20 "${extra_args[@]}"
 
       - name: Commit generated Markdown
         run: |
