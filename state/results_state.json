@@ -48,6 +48,13 @@
       "sha256": "d02c9cc222af0dd07555c5228e16ec2885c4740e7d09240528e86e01da25fdbe",
       "source_url": "https://www.formula1.com/en/results/2026/races/1290/belgium/practice/2",
       "updated_at": "2026-07-17T16:26:55.784374+00:00"
+    },
+    "2026:1290:belgium:practice-3": {
+      "event_summary": "🏎 FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2026 - Practice 3",
+      "output": "generated/2026/Belgium/belgium-practice-3.md",
+      "sha256": "1ddc0ba2e0351c10b6bffd3464c62605998ad2a4d442dc2ac9c15719a0e8aef8",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1290/belgium/practice/3",
+      "updated_at": "2026-07-18T12:39:43.185885+00:00"
     }
   }
 }
