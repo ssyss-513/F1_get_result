@@ -62,6 +62,13 @@
       "sha256": "e72c7a049aaacbbe9886417d0bd268accd437f52b5caba147a56d1044c436e21",
       "source_url": "https://www.formula1.com/en/results/2026/races/1290/belgium/qualifying",
       "updated_at": "2026-07-18T16:11:20.024370+00:00"
+    },
+    "2026:1290:belgium:race": {
+      "event_summary": "🏁 FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2026 - Race",
+      "output": "generated/2026/Belgium/belgium-race.md",
+      "sha256": "e75eeec9a1bf4da4c2377cf060ca4691837fb45540d532fc80a92edc5646af31",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1290/belgium/race-result",
+      "updated_at": "2026-07-19T16:08:53.163734+00:00"
     }
   }
 }
