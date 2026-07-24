@@ -69,6 +69,13 @@
       "sha256": "e75eeec9a1bf4da4c2377cf060ca4691837fb45540d532fc80a92edc5646af31",
       "source_url": "https://www.formula1.com/en/results/2026/races/1290/belgium/race-result",
       "updated_at": "2026-07-19T16:08:53.163734+00:00"
+    },
+    "2026:1291:hungary:practice-1": {
+      "event_summary": "🏎 FORMULA 1 AWS HUNGARIAN GRAND PRIX 2026 - Practice 1",
+      "output": "generated/2026/Hungary/hungary-practice-1.md",
+      "sha256": "5568fce08901d1316eb93e77dbe8f813438d04a0e3dfbda988358bebd5b2c95c",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1291/hungary/practice/1",
+      "updated_at": "2026-07-24T14:26:06.390647+00:00"
     }
   }
 }
