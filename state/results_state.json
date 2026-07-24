@@ -76,6 +76,13 @@
       "sha256": "5568fce08901d1316eb93e77dbe8f813438d04a0e3dfbda988358bebd5b2c95c",
       "source_url": "https://www.formula1.com/en/results/2026/races/1291/hungary/practice/1",
       "updated_at": "2026-07-24T14:26:06.390647+00:00"
+    },
+    "2026:1291:hungary:practice-2": {
+      "event_summary": "🏎 FORMULA 1 AWS HUNGARIAN GRAND PRIX 2026 - Practice 2",
+      "output": "generated/2026/Hungary/hungary-practice-2.md",
+      "sha256": "843cf56ca1edcdb1fb995da7f7b7434060c927c419563a0a87b8f22af66af6b6",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1291/hungary/practice/2",
+      "updated_at": "2026-07-24T17:54:01.103292+00:00"
     }
   }
 }
