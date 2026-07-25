@@ -90,6 +90,13 @@
       "sha256": "1daf1736df35d455f97da0b160fbb095df76d523edf5c05caf533ec842ad529f",
       "source_url": "https://www.formula1.com/en/results/2026/races/1291/hungary/practice/3",
       "updated_at": "2026-07-25T12:42:53.462458+00:00"
+    },
+    "2026:1291:hungary:qualifying": {
+      "event_summary": "⏱️ FORMULA 1 AWS HUNGARIAN GRAND PRIX 2026 - Qualifying",
+      "output": "generated/2026/Hungary/hungary-qualifying.md",
+      "sha256": "1681257e380ef66883d073b993fe73cb0534bdff7e5ba7c232fceaef470f2864",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1291/hungary/qualifying",
+      "updated_at": "2026-07-25T16:13:31.880901+00:00"
     }
   }
 }
