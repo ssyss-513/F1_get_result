@@ -97,6 +97,13 @@
       "sha256": "1681257e380ef66883d073b993fe73cb0534bdff7e5ba7c232fceaef470f2864",
       "source_url": "https://www.formula1.com/en/results/2026/races/1291/hungary/qualifying",
       "updated_at": "2026-07-25T16:13:31.880901+00:00"
+    },
+    "2026:1291:hungary:race": {
+      "event_summary": "🏁 FORMULA 1 AWS HUNGARIAN GRAND PRIX 2026 - Race",
+      "output": "generated/2026/Hungary/hungary-race.md",
+      "sha256": "67e248a95d733adc6331bcf4cf18e06361e25a97eda86919ad5b9860e63726bd",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1291/hungary/race-result",
+      "updated_at": "2026-07-26T16:15:27.660071+00:00"
     }
   }
 }
