@@ -94,6 +94,13 @@ python3 sync_workflow_schedule.py \
   --year 2026
 ```
 
+GitHub's built-in `GITHUB_TOKEN` cannot push changes to workflow files. To let
+the daily calendar sync commit schedule changes automatically, create a
+fine-grained personal access token limited to this repository with **Contents:
+Read and write** and **Workflows: Read and write**, then save it as the Actions
+repository secret `WORKFLOW_PAT`. Without this secret, the sync reports pending
+changes as a warning and exits successfully instead of failing every day.
+
 For a manual backfill in GitHub Actions, run **F1 result Markdown** with:
 
 ```text
