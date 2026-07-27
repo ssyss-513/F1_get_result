@@ -6,9 +6,9 @@ and writes Markdown tables that can be pasted directly into the blog.
 Driver cells keep both Chinese and English names, for example
 `刘易斯·汉密尔顿 Lewis Hamilton`.
 
-The generator does not publish to the blog database. It only writes Markdown
-files under `generated/<year>/<race>/` and records processed sessions under
-`state/`.
+The generator writes Markdown files under `generated/<year>/<race>/`, records
+processed sessions under `state/`, and can publish each completed session to the
+blog through the signed HTTP publisher endpoint.
 
 ## Layout
 
@@ -16,6 +16,7 @@ files under `generated/<year>/<race>/` and records processed sessions under
 F1_get_result/
   f1_get_result.py          Main generator
   sync_workflow_schedule.py Convert ICS session times into exact Actions schedules
+  publish_blog.py          Publish eligible sessions to one article per Grand Prix
   config/translations.json  Chinese driver/team/session names
   config/race_aliases.json  Calendar location/title to F1 result slug hints
   data/                     Optional checked-in ICS file location
@@ -100,6 +101,22 @@ fine-grained personal access token limited to this repository with **Contents:
 Read and write** and **Workflows: Read and write**, then save it as the Actions
 repository secret `WORKFLOW_PAT`. Without this secret, the sync reports pending
 changes as a warning and exits successfully instead of failing every day.
+
+## Automatic blog publishing
+
+Deploy `f1-publish.php` and `app/f1_publish.php` from the blog project, then add
+these repository secrets:
+
+```text
+BLOG_PUBLISH_URL=http://blog.jiwo.top/blog/f1-publish.php
+BLOG_PUBLISH_SECRET=<the same signing secret configured on the blog>
+```
+
+The endpoint uses a timestamped HMAC signature, so the blog administrator
+password is never sent by GitHub Actions. A Grand Prix has one stable article.
+New sessions are added in calendar order, and publishing the same session again
+replaces only that session. The existing 2026 Silverstone article is mapped to
+`f1-2026-silver-stone` in `config/blog_publish.json`.
 
 For a manual backfill in GitHub Actions, run **F1 result Markdown** with:
 

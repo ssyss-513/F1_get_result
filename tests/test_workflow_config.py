@@ -21,6 +21,15 @@ class WorkflowConfigTest(unittest.TestCase):
             self.assertNotIn("actions/checkout@v4", workflow, path.name)
             self.assertNotIn("actions/setup-python@v5", workflow, path.name)
 
+    def test_result_workflow_publishes_before_committing(self) -> None:
+        workflow = (ROOT / ".github" / "workflows" / "f1-results.yml").read_text(encoding="utf-8")
+
+        publish_position = workflow.index("- name: Publish results to blog")
+        commit_position = workflow.index("- name: Commit generated Markdown")
+        self.assertLess(publish_position, commit_position)
+        self.assertIn("BLOG_PUBLISH_URL: ${{ secrets.BLOG_PUBLISH_URL }}", workflow)
+        self.assertIn("BLOG_PUBLISH_SECRET: ${{ secrets.BLOG_PUBLISH_SECRET }}", workflow)
+
 
 if __name__ == "__main__":
     unittest.main()

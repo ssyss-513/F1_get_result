@@ -633,6 +633,15 @@ def output_path(output_dir: Path, race: RaceInfo, session_key: str) -> Path:
     return output_dir / str(race.year) / output_folder_name(race) / f"{race.slug}-{SESSION_FILE_NAMES[session_key]}.md"
 
 
+def publish_manifest_entry(race: RaceInfo, session_key: str, out: Path) -> dict[str, Any]:
+    return {
+        "year": race.year,
+        "race_slug": race.slug,
+        "session_key": session_key,
+        "markdown_path": state_output_path(out),
+    }
+
+
 def state_output_path(out: Path) -> str:
     try:
         return str(out.relative_to(BASE_DIR))
@@ -717,6 +726,7 @@ def run(args: argparse.Namespace) -> int:
     state = load_state(state_path)
     changed = False
     generated_count = 0
+    publish_sessions: list[dict[str, Any]] = []
 
     for event in candidates:
         if args.race_slug:
@@ -760,6 +770,7 @@ def run(args: argparse.Namespace) -> int:
         digest = hashlib.sha256(md.encode("utf-8")).hexdigest()
         out = output_path(Path(args.output_dir), race, event.session_key)
         output_digest = file_sha256(out)
+        publish_sessions.append(publish_manifest_entry(race, event.session_key, out))
         if state["results"].get(key, {}).get("sha256") == digest and output_digest == digest and not args.force:
             print(f"unchanged: {key}")
             continue
@@ -782,6 +793,7 @@ def run(args: argparse.Namespace) -> int:
     if changed and not args.no_state:
         write_json(state_path, state)
 
+    write_json(Path(args.publish_manifest), {"sessions": publish_sessions})
     print(f"done: generated {generated_count} file(s)")
     return 0
 
@@ -792,6 +804,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--ics-url", help="Formula 1 ICS subscription URL. Prefer GitHub secret F1_ICS_URL.")
     parser.add_argument("--output-dir", default=str(BASE_DIR / "generated"), help="Markdown output directory.")
     parser.add_argument("--state-file", default=str(BASE_DIR / "state" / "results_state.json"), help="State JSON path.")
+    parser.add_argument(
+        "--publish-manifest",
+        default=str(BASE_DIR / ".f1-publish-manifest.json"),
+        help="Temporary JSON manifest containing sessions ready for blog publishing.",
+    )
     parser.add_argument("--lookback-hours", type=int, default=96, help="Only process sessions ended within this many hours.")
     parser.add_argument("--delay-minutes", type=int, default=20, help="Wait this long after session end before fetching results.")
     parser.add_argument("--sleep-seconds", type=float, default=0.5, help="Delay between Formula 1 page requests.")

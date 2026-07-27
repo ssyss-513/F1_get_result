@@ -1,3 +1,4 @@
 .DS_Store
 __pycache__/
 *.pyc
+.f1-publish-manifest.json
