@@ -104,6 +104,13 @@
       "sha256": "67e248a95d733adc6331bcf4cf18e06361e25a97eda86919ad5b9860e63726bd",
       "source_url": "https://www.formula1.com/en/results/2026/races/1291/hungary/race-result",
       "updated_at": "2026-07-26T16:15:27.660071+00:00"
+    },
+    "2026:1292:netherlands:practice-1": {
+      "event_summary": "🏎 FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026 - Practice 1",
+      "output": "generated/2026/Netherlands/netherlands-practice-1.md",
+      "sha256": "4a6cd1ad9028c0885f9131011bf3e02fba819fb957bf6f9b0a3b5d56e095ff8b",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/practice/1",
+      "updated_at": "2026-08-21T12:03:41.503034+00:00"
     }
   }
 }
