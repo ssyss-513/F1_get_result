@@ -112,6 +112,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/practice/1",
       "updated_at": "2026-08-21T12:03:41.503034+00:00"
     },
+    "2026:1292:netherlands:sprint": {
+      "event_summary": "🏁 FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026 - Sprint Race",
+      "output": "generated/2026/Netherlands/netherlands-sprint.md",
+      "sha256": "a5f432c28e420de71f0f10a0ceb836712b3b3badc2c25b1d9a19966756bd1662",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/sprint-results",
+      "updated_at": "2026-08-22T11:33:17.831376+00:00"
+    },
     "2026:1292:netherlands:sprint-qualifying": {
       "event_summary": "⏱️ FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026 - Sprint Qualification",
       "output": "generated/2026/Netherlands/netherlands-sprint-qualifying.md",
