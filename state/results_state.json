@@ -119,6 +119,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/qualifying",
       "updated_at": "2026-08-22T15:36:12.142674+00:00"
     },
+    "2026:1292:netherlands:race": {
+      "event_summary": "🏁 FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026 - Race",
+      "output": "generated/2026/Netherlands/netherlands-race.md",
+      "sha256": "3d583f76ffe8f475b88eeb4d6ae2524e2923e18082170ac7fba9e5de245ff9e2",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/race-result",
+      "updated_at": "2026-08-23T15:58:14.915885+00:00"
+    },
     "2026:1292:netherlands:sprint": {
       "event_summary": "🏁 FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026 - Sprint Race",
       "output": "generated/2026/Netherlands/netherlands-sprint.md",
