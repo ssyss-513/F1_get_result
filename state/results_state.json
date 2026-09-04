@@ -139,6 +139,13 @@
       "sha256": "ed19ceee467d1132f34b9350a1b7b73580f3e85723dbd66249c199a3700632a7",
       "source_url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/sprint-qualifying",
       "updated_at": "2026-08-21T16:00:04.411477+00:00"
+    },
+    "2026:1293:italy:practice-1": {
+      "event_summary": "🏎 FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2026 - Practice 1",
+      "output": "generated/2026/Italy/italy-practice-1.md",
+      "sha256": "ecc4c8ddf4533b77c45269ee68ef8538a1079033883f4ae392dcd146e76a9237",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1293/italy/practice/1",
+      "updated_at": "2026-09-04T15:06:15.421532+00:00"
     }
   }
 }
