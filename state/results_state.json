@@ -146,6 +146,13 @@
       "sha256": "ecc4c8ddf4533b77c45269ee68ef8538a1079033883f4ae392dcd146e76a9237",
       "source_url": "https://www.formula1.com/en/results/2026/races/1293/italy/practice/1",
       "updated_at": "2026-09-04T15:06:15.421532+00:00"
+    },
+    "2026:1293:italy:practice-2": {
+      "event_summary": "🏎 FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2026 - Practice 2",
+      "output": "generated/2026/Italy/italy-practice-2.md",
+      "sha256": "9683be566cc1c27f66a77669264c3b601e3d64a4af081e6e90f05d77b0ae3bdd",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1293/italy/practice/2",
+      "updated_at": "2026-09-04T16:23:28.317516+00:00"
     }
   }
 }
