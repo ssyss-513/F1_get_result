@@ -160,6 +160,13 @@
       "sha256": "c8dc40f39057c327a37e86ba932e1513879f295de8c73041f0a06507754d55a4",
       "source_url": "https://www.formula1.com/en/results/2026/races/1293/italy/practice/3",
       "updated_at": "2026-09-05T14:00:38.049508+00:00"
+    },
+    "2026:1293:italy:qualifying": {
+      "event_summary": "⏱️ FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2026 - Qualifying",
+      "output": "generated/2026/Italy/italy-qualifying.md",
+      "sha256": "62c17f7e05463a158ffbfbbc1ff6b1a7bba4399d66e3e2f89aad2f74f0269180",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1293/italy/qualifying",
+      "updated_at": "2026-09-05T17:22:10.444707+00:00"
     }
   }
 }
