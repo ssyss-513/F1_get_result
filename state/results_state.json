@@ -167,6 +167,13 @@
       "sha256": "62c17f7e05463a158ffbfbbc1ff6b1a7bba4399d66e3e2f89aad2f74f0269180",
       "source_url": "https://www.formula1.com/en/results/2026/races/1293/italy/qualifying",
       "updated_at": "2026-09-05T17:22:10.444707+00:00"
+    },
+    "2026:1293:italy:race": {
+      "event_summary": "🏁 FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2026 - Race",
+      "output": "generated/2026/Italy/italy-race.md",
+      "sha256": "e6b9a4e7aa172701cb3df7ca826999cee32a4ff1a7f8e84e1eb18e68a9773d3c",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1293/italy/race-result",
+      "updated_at": "2026-09-06T17:36:08.725904+00:00"
     }
   }
 }
