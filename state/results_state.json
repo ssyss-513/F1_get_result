@@ -174,6 +174,20 @@
       "sha256": "e6b9a4e7aa172701cb3df7ca826999cee32a4ff1a7f8e84e1eb18e68a9773d3c",
       "source_url": "https://www.formula1.com/en/results/2026/races/1293/italy/race-result",
       "updated_at": "2026-09-06T17:36:08.725904+00:00"
+    },
+    "2026:1294:spain:practice-1": {
+      "event_summary": "🏎 FORMULA 1 TAG HEUER GRAN PREMIO DE ESPAÑA 2026 - Practice 1",
+      "output": "generated/2026/Spain/spain-practice-1.md",
+      "sha256": "3707e8ba88fdd7754b3f158f7effb948ac40e05de04f1ffebd20614e2b5436b5",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1294/spain/practice/1",
+      "updated_at": "2026-09-11T16:46:46.735282+00:00"
+    },
+    "2026:1294:spain:practice-2": {
+      "event_summary": "🏎 FORMULA 1 TAG HEUER GRAN PREMIO DE ESPAÑA 2026 - Practice 2",
+      "output": "generated/2026/Spain/spain-practice-2.md",
+      "sha256": "a1e609f0c1275bc26ea941cb36328bcfe6d4f2b83780f6ca6cf487af81907f46",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1294/spain/practice/2",
+      "updated_at": "2026-09-11T16:46:46.735282+00:00"
     }
   }
 }
