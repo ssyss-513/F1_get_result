@@ -195,6 +195,13 @@
       "sha256": "0292c4776803770eef1a6478fe0e79b1d2a1b4e5c38d443617eaaa6c2061e99b",
       "source_url": "https://www.formula1.com/en/results/2026/races/1294/spain/practice/3",
       "updated_at": "2026-09-12T14:24:05.922802+00:00"
+    },
+    "2026:1294:spain:qualifying": {
+      "event_summary": "⏱️ FORMULA 1 TAG HEUER GRAN PREMIO DE ESPAÑA 2026 - Qualifying",
+      "output": "generated/2026/Spain/spain-qualifying.md",
+      "sha256": "34231f693a5f0e70b76fe8f5b7831f68538b3088f050e4bd22d4b269328677e1",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1294/spain/qualifying",
+      "updated_at": "2026-09-12T15:35:43.675517+00:00"
     }
   }
 }
