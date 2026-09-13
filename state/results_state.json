@@ -202,6 +202,13 @@
       "sha256": "34231f693a5f0e70b76fe8f5b7831f68538b3088f050e4bd22d4b269328677e1",
       "source_url": "https://www.formula1.com/en/results/2026/races/1294/spain/qualifying",
       "updated_at": "2026-09-12T15:35:43.675517+00:00"
+    },
+    "2026:1294:spain:race": {
+      "event_summary": "🏁 FORMULA 1 TAG HEUER GRAN PREMIO DE ESPAÑA 2026 - Race",
+      "output": "generated/2026/Spain/spain-race.md",
+      "sha256": "025e21d0dff30f15e86be1bb1ee68b520421b16c2886c757898f2cb69e292e01",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1294/spain/race-result",
+      "updated_at": "2026-09-13T18:12:26.550085+00:00"
     }
   }
 }
