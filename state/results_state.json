@@ -209,6 +209,20 @@
       "sha256": "025e21d0dff30f15e86be1bb1ee68b520421b16c2886c757898f2cb69e292e01",
       "source_url": "https://www.formula1.com/en/results/2026/races/1294/spain/race-result",
       "updated_at": "2026-09-13T18:12:26.550085+00:00"
+    },
+    "2026:1295:azerbaijan:practice-1": {
+      "event_summary": "🏎 FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2026 - Practice 1",
+      "output": "generated/2026/Azerbaijan/azerbaijan-practice-1.md",
+      "sha256": "b76e2a6a70b7291e1dfa2a072147123a95a69d2b310b28ef403d4b77ea725422",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/practice/1",
+      "updated_at": "2026-09-24T14:26:31.722012+00:00"
+    },
+    "2026:1295:azerbaijan:practice-2": {
+      "event_summary": "🏎 FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2026 - Practice 2",
+      "output": "generated/2026/Azerbaijan/azerbaijan-practice-2.md",
+      "sha256": "e913c1a40328ca7c6554b9eda3f753dad3898d169350d0254363c708c70888ab",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/practice/2",
+      "updated_at": "2026-09-24T14:26:31.722012+00:00"
     }
   }
 }
