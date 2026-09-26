@@ -237,6 +237,13 @@
       "sha256": "be513a51bd1c08794aa53bd184769e03355dab2af6cdd12746dd9128c4684108",
       "source_url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/qualifying",
       "updated_at": "2026-09-25T14:44:15.713444+00:00"
+    },
+    "2026:1295:azerbaijan:race": {
+      "event_summary": "🏁 FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2026 - Race",
+      "output": "generated/2026/Azerbaijan/azerbaijan-race.md",
+      "sha256": "0cceceec81f158cabf9ede86a9d35339c29b77e8e6d0eecea202542a0a370a49",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/race-result",
+      "updated_at": "2026-09-26T17:09:31.378686+00:00"
     }
   }
 }
