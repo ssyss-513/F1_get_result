@@ -18,9 +18,9 @@
 | 10 | 55 | 卡洛斯·塞恩斯 Carlos Sainz | 威廉姆斯 | 51 | +32.416s | 1 |
 | 11 | 27 | 尼科·霍肯伯格 Nico Hulkenberg | 奥迪 | 51 | +33.231s | 0 |
 | 12 | 30 | 利亚姆·劳森 Liam Lawson | Racing Bulls | 51 | +34.013s | 0 |
-| 13 | 5 | 加布里埃尔·博托莱托 Gabriel Bortoleto | 奥迪 | 51 | +34.230s | 0 |
-| 14 | 81 | 奥斯卡·皮亚斯特里 Oscar Piastri | 迈凯伦 | 51 | +36.401s | 0 |
-| 15 | 11 | 塞尔吉奥·佩雷兹 Sergio Perez | 凯迪拉克 | 51 | +41.400s | 0 |
+| 13 | 81 | 奥斯卡·皮亚斯特里 Oscar Piastri | 迈凯伦 | 51 | +36.401s | 0 |
+| 14 | 11 | 塞尔吉奥·佩雷兹 Sergio Perez | 凯迪拉克 | 51 | +41.400s | 0 |
+| 15 | 5 | 加布里埃尔·博托莱托 Gabriel Bortoleto | 奥迪 | 51 | +44.230s | 0 |
 | 16 | 77 | 瓦尔特里·博塔斯 Valtteri Bottas | 凯迪拉克 | 49 | DNF | 0 |
 | NC | 43 | 弗兰科·科拉平托 Franco Colapinto | 阿尔派 | 36 | DNF | 0 |
 | NC | 10 | 皮埃尔·加斯利 Pierre Gasly | 阿尔派 | 35 | DNF | 0 |
