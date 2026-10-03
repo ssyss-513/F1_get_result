@@ -258,6 +258,20 @@
       "sha256": "53556b336bf37cfe591f270a860b4ed1f9982606d54d83dfb0e04a439a7d1f92",
       "source_url": "https://www.formula1.com/en/results/2026/races/1308/bahrain/practice/2",
       "updated_at": "2026-10-02T10:32:27.708040+00:00"
+    },
+    "2026:1308:bahrain:practice-3": {
+      "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 3",
+      "output": "generated/2026/Bahrain/bahrain-practice-3.md",
+      "sha256": "e98d577f91c8e9738fceb0957054485c6206742d9a2e2e7cdafcb055db4e1561",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1308/bahrain/practice/3",
+      "updated_at": "2026-10-03T09:55:53.732759+00:00"
+    },
+    "2026:1308:bahrain:qualifying": {
+      "event_summary": "⏱️ FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Qualifying",
+      "output": "generated/2026/Bahrain/bahrain-qualifying.md",
+      "sha256": "3184029f9e415c408127bf822f92643572ffe477e0bb376eeb94e325ade2aaf2",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1308/bahrain/qualifying",
+      "updated_at": "2026-10-03T09:55:53.732759+00:00"
     }
   }
 }
