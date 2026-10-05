@@ -272,6 +272,13 @@
       "sha256": "3184029f9e415c408127bf822f92643572ffe477e0bb376eeb94e325ade2aaf2",
       "source_url": "https://www.formula1.com/en/results/2026/races/1308/bahrain/qualifying",
       "updated_at": "2026-10-03T09:55:53.732759+00:00"
+    },
+    "2026:1308:bahrain:race": {
+      "event_summary": "🏁 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Race",
+      "output": "generated/2026/Bahrain/bahrain-race.md",
+      "sha256": "cdebf2fd87a027166eebf396863650b8bcdfbc56f11360954587b4e8c57f0a3e",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1308/bahrain/race-result",
+      "updated_at": "2026-10-05T11:33:26.149066+00:00"
     }
   }
 }
