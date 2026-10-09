@@ -245,6 +245,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/race-result",
       "updated_at": "2026-09-26T17:22:39.464889+00:00"
     },
+    "2026:1296:singapore:practice-1": {
+      "event_summary": "🏎 FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026 - Practice 1",
+      "output": "generated/2026/Singapore/singapore-practice-1.md",
+      "sha256": "ee6bafad400ac886607e073198d5dc75dcb0021eebe15cf2c1d1441f80cbb9a2",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1296/singapore/practice/1",
+      "updated_at": "2026-10-09T16:37:26.688051+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
