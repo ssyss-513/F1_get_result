@@ -252,6 +252,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1296/singapore/practice/1",
       "updated_at": "2026-10-09T16:37:26.688051+00:00"
     },
+    "2026:1296:singapore:sprint-qualifying": {
+      "event_summary": "⏱️ FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026 - Sprint Qualification",
+      "output": "generated/2026/Singapore/singapore-sprint-qualifying.md",
+      "sha256": "7e6e1becca1b4849334ecf75f42155fd9e5f79e1cd0671bd2e7e2d206ef8b782",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1296/singapore/sprint-qualifying",
+      "updated_at": "2026-10-09T18:55:02.266429+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
