@@ -262,9 +262,9 @@
     "2026:1296:singapore:sprint": {
       "event_summary": "🏁 FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026 - Sprint Race",
       "output": "generated/2026/Singapore/singapore-sprint.md",
-      "sha256": "5e3b7ae818c0d3d76d4332085953ff8fa98a82eb7cc15df1ca566e68760c520f",
+      "sha256": "b622e1e533c2e1278831622597966ab5005a29610c9c7b240f401a6ad549a6fd",
       "source_url": "https://www.formula1.com/en/results/2026/races/1296/singapore/sprint-results",
-      "updated_at": "2026-10-10T15:53:19.585426+00:00"
+      "updated_at": "2026-10-11T10:51:28.197686+00:00"
     },
     "2026:1296:singapore:sprint-qualifying": {
       "event_summary": "⏱️ FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026 - Sprint Qualification",
