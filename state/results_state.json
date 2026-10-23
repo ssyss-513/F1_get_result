@@ -280,6 +280,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1296/singapore/sprint-qualifying",
       "updated_at": "2026-10-09T18:55:02.266429+00:00"
     },
+    "2026:1297:united-states:practice-1": {
+      "event_summary": "🏎 FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2026 - Practice 1",
+      "output": "generated/2026/United-States/united-states-practice-1.md",
+      "sha256": "007cb7c4a0df0b8e24b0804f620e5cd98aee503369f7587536da1d8c20c8d9b9",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1297/united-states/practice/1",
+      "updated_at": "2026-10-23T21:41:03.979611+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
