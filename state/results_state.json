@@ -301,6 +301,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1297/united-states/practice/3",
       "updated_at": "2026-10-24T21:11:57.517868+00:00"
     },
+    "2026:1297:united-states:qualifying": {
+      "event_summary": "⏱️ FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2026 - Qualifying",
+      "output": "generated/2026/United-States/united-states-qualifying.md",
+      "sha256": "3e238cfda86f9fecdbc624fa65f8593e1db15424be0f8e6461c8b0d161628a19",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1297/united-states/qualifying",
+      "updated_at": "2026-10-25T00:22:12.494938+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
