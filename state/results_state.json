@@ -322,6 +322,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1298/mexico/practice/1",
       "updated_at": "2026-10-30T23:14:13.414267+00:00"
     },
+    "2026:1298:mexico:practice-2": {
+      "event_summary": "🏎 FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026 - Practice 2",
+      "output": "generated/2026/Mexico/mexico-practice-2.md",
+      "sha256": "e5f23e0ab13e1eb4568bbcdbeef138bb87e297fa9e3c8245f900bb6bf655b301",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1298/mexico/practice/2",
+      "updated_at": "2026-10-30T23:53:10.785734+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
