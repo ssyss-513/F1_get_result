@@ -336,6 +336,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1298/mexico/practice/3",
       "updated_at": "2026-10-31T21:53:09.068952+00:00"
     },
+    "2026:1298:mexico:qualifying": {
+      "event_summary": "⏱️ FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026 - Qualifying",
+      "output": "generated/2026/Mexico/mexico-qualifying.md",
+      "sha256": "057da031903755da90494da37be6f627168d62b9dc7498b114c3813f997ad03a",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1298/mexico/qualifying",
+      "updated_at": "2026-10-31T22:29:09.440017+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
