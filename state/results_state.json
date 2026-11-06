@@ -350,6 +350,20 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result",
       "updated_at": "2026-11-02T12:31:07.232294+00:00"
     },
+    "2026:1299:brazil:practice-1": {
+      "event_summary": "🏎 FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2026 - Practice 1",
+      "output": "generated/2026/Brazil/brazil-practice-1.md",
+      "sha256": "ef61401c78fce1fd1d42eeb5cb0d11a573bf240b14d63b26249d6fb9ea84bdce",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1299/brazil/practice/1",
+      "updated_at": "2026-11-06T21:45:40.283097+00:00"
+    },
+    "2026:1299:brazil:practice-2": {
+      "event_summary": "🏎 FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2026 - Practice 2",
+      "output": "generated/2026/Brazil/brazil-practice-2.md",
+      "sha256": "b2e0d9c2dc1713fca6cec5b12fc355973b4d71f05b103ef4e655de73d5b4e04d",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1299/brazil/practice/2",
+      "updated_at": "2026-11-06T21:45:40.283097+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
