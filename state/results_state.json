@@ -378,6 +378,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1299/brazil/qualifying",
       "updated_at": "2026-11-07T22:47:34.217550+00:00"
     },
+    "2026:1299:brazil:race": {
+      "event_summary": "🏁 FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2026 - Race",
+      "output": "generated/2026/Brazil/brazil-race.md",
+      "sha256": "052612698b6a9839d6ba2cfefc0e7c8f1e56bffbcaab99d9b072fce2a3c1bc3f",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1299/brazil/race-result",
+      "updated_at": "2026-11-08T22:56:20.740947+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
