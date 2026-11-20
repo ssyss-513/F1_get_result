@@ -385,6 +385,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1299/brazil/race-result",
       "updated_at": "2026-11-08T22:56:20.740947+00:00"
     },
+    "2026:1300:las-vegas:practice-2": {
+      "event_summary": "🏎 FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2026 - Practice 2",
+      "output": "generated/2026/Las-Vegas/las-vegas-practice-2.md",
+      "sha256": "a24feb448cd4a48d5cb0f018fa39cfc981f9c2e49e57459b539e2f77750838ec",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1300/las-vegas/practice/2",
+      "updated_at": "2026-11-20T09:12:53.941465+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
