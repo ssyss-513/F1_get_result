@@ -406,6 +406,13 @@
       "source_url": "https://www.formula1.com/en/results/2026/races/1300/las-vegas/qualifying",
       "updated_at": "2026-11-21T08:45:10.635600+00:00"
     },
+    "2026:1300:las-vegas:race": {
+      "event_summary": "🏁 FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2026 - Race",
+      "output": "generated/2026/Las-Vegas/las-vegas-race.md",
+      "sha256": "ba47edc52adbe2d8b59e1751fdc5177916533a141cadc14f0dcd818b0f033db1",
+      "source_url": "https://www.formula1.com/en/results/2026/races/1300/las-vegas/race-result",
+      "updated_at": "2026-11-22T12:38:38.119592+00:00"
+    },
     "2026:1308:bahrain:practice-1": {
       "event_summary": "🏎 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 - Practice 1",
       "output": "generated/2026/Bahrain/bahrain-practice-1.md",
